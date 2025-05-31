@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={reactLogo} className="logo react" alt="React logo" />
 
         <h1>Hi Dad, this is public so we can make this a real website at some point.</h1>
+        
       </header>
     </div>
   );
