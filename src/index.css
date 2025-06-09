@@ -19,7 +19,7 @@ a:hover {
 }
 
 header {
-  color: #1a1a1a;
+  color: #beaaaa;
   height: 10%;
 }
 
@@ -66,10 +66,27 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.mainheader {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.item {
+  padding: 10px;
+  background-color: rgb(30, 30, 31);
+  margin: 5dvh;
+  border-radius: 10px;
+  width: 120%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #4d4d4d;
-    background-color: #080808;
+    background-color: #9c9494;
   }
   a:hover {
     color: #747bff;
