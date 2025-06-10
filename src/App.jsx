@@ -27,18 +27,16 @@ function MainButton(){
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div class="mainheader">
-          <div class="item">
+      <header className="header">
+        <div className="mainheader">
             <Image/>
-            <br />
             <MainHeader/>
-            <h2>Web Developer with 9 years of experience.</h2>
+            <br />
+            <p>Web Developer with 9 years of experience.</p>
         </div>
-          <div class="item">
+        <div className="item">
             <h2>MySQL Databases from top to botttom.</h2>
             <p>From writing scripts to perfrom complex database operations to optimizing existing queries using such methods as indexing.</p>
-          </div>
         </div>
         <br />
         <MainInput/>
