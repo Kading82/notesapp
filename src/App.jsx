@@ -24,24 +24,39 @@ function MainButton(){
   );
 }
 
+function Item(){
+  return(
+    <div className="item">
+      <h2>MySQL Databases from top to botttom.</h2>
+      <p>From writing scripts to perfrom complex database operations to optimizing existing queries using such methods as indexing.</p>
+    </div>
+  );
+}
+
+function ItemTwo(){
+  return(
+    <div className="item">
+      <h2>Item2</h2>
+      <p>Dummy text, foo bar, custom linux kernels and more!!</p>
+    </div>
+  );
+}
 function App() {
   return (
     <div className="App">
       <header className="header">
         <div className="mainheader">
-            <Image/>
-            <MainHeader/>
-            <br />
-            <p>Web Developer with 9 years of experience.</p>
+          <Image/>
+          <MainHeader/>
+          <br />
+          <p>Web Developer with 9 years of experience.</p>
         </div>
-        <div className="item">
-            <h2>MySQL Databases from top to botttom.</h2>
-            <p>From writing scripts to perfrom complex database operations to optimizing existing queries using such methods as indexing.</p>
-        </div>
+          <Item/>
+          <ItemTwo/>
         <br />
-        <MainInput/>
+          <MainInput/>
         <br />
-        <MainButton/>
+          <MainButton/>
       </header>
     </div>
   );
