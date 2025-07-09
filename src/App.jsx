@@ -53,7 +53,10 @@ function App() {
           description="This site is hosted on AWS right now using such AWS services as Route 53 and AWS Amplify.  I can also work with Azure!"
           />
         <br />
-          <MainInput inputDescription="Name"/>
+          <MainInput inputDescription="Sample Data 1"/>
+          <MainInput inputDescription="Sample Data 2"/>
+          <MainInput inputDescription="Sample Data 3"/>
+          <MainInput inputDescription="Sample Data 4"/>
         <br />
           <MainButton/>
     </div>
