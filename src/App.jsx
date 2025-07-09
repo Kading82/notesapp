@@ -1,20 +1,26 @@
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import headshot from "./images/headshot_webpage.jpg"
+import React, { useState } from 'react';
 
 function Image() {
-  return <img width={200} height={175} src={headshot} padding={10} align="left" alt="Headshot" />;
+  return <img width={200} height={175} src={headshot} padding={10} alt="Headshot" />;
 }
 
-function MainInput() {
+function MainInput({ inputName, inputDescription }) {
   return(
-    <input></input>
+    <div className="input">
+    {inputDescription}: <input name={inputName}></input>
+    </div>
   );
 }
 
 function MainHeader(){
   return(
-    <h1>August Kading</h1>
+    <div classname="mainheader" >
+      <img width={200} height={175} src={headshot} padding={10} alt="Headshot" />
+      <h2>August Kading</h2>
+      <p>Web Developer with 9 years of experience.</p>
+    </div>
   );
 }
 
@@ -24,40 +30,32 @@ function MainButton(){
   );
 }
 
-function Item(){
+function Item({ title, description, image }){
   return(
     <div className="item">
-      <h2>MySQL Databases from top to botttom.</h2>
-      <p>From writing scripts to perfrom complex database operations to optimizing existing queries using such methods as indexing.</p>
+      <img src={image}></img>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </div>
   );
 }
 
-function ItemTwo(){
-  return(
-    <div className="item">
-      <h2>Item2</h2>
-      <p>Dummy text, foo bar, custom linux kernels and more!!</p>
-    </div>
-  );
-}
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <div className="mainheader">
-          <Image/>
+      <div className="mainheader">
           <MainHeader/>
-          <br />
-          <p>Web Developer with 9 years of experience.</p>
-        </div>
-          <Item/>
-          <ItemTwo/>
+      </div>
+          <Item title="MySQL Databases from top to botttom" 
+          description="From writing scripts to perfrom complex database operations to optimizing existing queries using such methods as indexing."
+          />
+          <Item title="Cloud Services inside and out"
+          description="This site is hosted on AWS right now using such AWS services as Route 53 and AWS Amplify.  I can also work with Azure!"
+          />
         <br />
-          <MainInput/>
+          <MainInput inputDescription="Name"/>
         <br />
           <MainButton/>
-      </header>
     </div>
   );
 }
