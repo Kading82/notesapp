@@ -1,6 +1,5 @@
 import "./App.css";
 import headshot from "./images/headshot_webpage.jpg"
-import React, { useState } from 'react';
 
 function Image() {
   return <img width={200} height={175} src={headshot} padding={10} alt="Headshot" />;
@@ -51,6 +50,9 @@ function App() {
           />
           <Item title="Cloud Services inside and out"
           description="This site is hosted on AWS right now using such AWS services as Route 53 and AWS Amplify.  I can also work with Azure!"
+          />
+          <Item title="CI/CD, I can do that"
+          description='As well as being hosted on AWS, this site also uses other technologies to automatically upload each push to "production."  Making each push live shortly after passing through the CI/CD workflow.'
           />
         <br />
           <MainInput inputDescription="Sample Data 1"/>
